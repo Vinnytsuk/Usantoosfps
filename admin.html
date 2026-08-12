@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Demo | USANTOOSFPS</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .admin{padding:55px 0 90px}
+    .admin h1{font-size:44px;margin:10px 0}
+    .admin p{color:var(--muted)}
+    .warning{border:1px solid rgba(255,211,83,.25);background:rgba(255,211,83,.04);color:#dacb91;padding:14px;border-radius:14px;font-size:12px;margin:20px 0}
+    .admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+    .admin-card{border:1px solid var(--line);border-radius:19px;padding:20px;background:#08100a}
+    .admin-card h2{margin-top:0}
+    .admin-row{display:grid;grid-template-columns:1fr 130px;gap:10px;align-items:end;border-top:1px solid var(--line);padding:12px 0}
+    .admin-row:first-of-type{border-top:0}
+    label{display:grid;gap:6px;color:var(--muted);font-size:11px}
+    input,textarea{width:100%;background:#050806;color:white;border:1px solid var(--line);border-radius:10px;padding:11px;outline:none}
+    textarea{min-height:260px;font-family:monospace;font-size:10px}
+    .actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+    @media(max-width:780px){.admin-grid{grid-template-columns:1fr}.admin-row{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="brand-icon">UF</span><span>USANTOOSFPS</span></a>
+      <a class="btn btn-outline" href="index.html">VOLTAR AO SITE</a>
+    </div>
+  </header>
+
+  <main class="admin">
+    <div class="container">
+      <span class="eyebrow">PAINEL DEMO</span>
+      <h1>Editor de preços e links</h1>
+      <p>Edite aqui e exporte um novo <code>config.js</code>.</p>
+
+      <div class="warning">
+        Este painel é demonstrativo e não tem autenticação. Não publique como painel administrativo real.
+      </div>
+
+      <div class="admin-grid">
+        <section class="admin-card">
+          <h2>Contatos</h2>
+          <label>WhatsApp<input id="wa"></label>
+          <label>Discord<input id="dc"></label>
+        </section>
+
+        <section class="admin-card">
+          <h2>Serviços</h2>
+          <div id="editors"></div>
+        </section>
+
+        <section class="admin-card" style="grid-column:1/-1">
+          <h2>Exportar</h2>
+          <div class="actions">
+            <button class="btn btn-primary" id="generate">GERAR CONFIG</button>
+            <button class="btn btn-outline" id="copy">COPIAR</button>
+            <button class="btn btn-outline" id="download">BAIXAR CONFIG.JS</button>
+          </div>
+          <textarea id="out"></textarea>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

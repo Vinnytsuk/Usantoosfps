@@ -1,0 +1,2 @@
+Coloque nesta pasta as fotos dos influenciadores e prints dos feedbacks.
+Depois informe os caminhos no config.js.

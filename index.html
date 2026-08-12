@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050806">
+  <meta name="description" content="USANTOOSFPS — otimização de PC, Android e iOS.">
+  <title>USANTOOSFPS | Otimização e Performance</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#inicio">
+        <span class="brand-icon">UF</span>
+        <span>USANTOOSFPS</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+      <nav class="menu">
+        <a href="#pc">PC</a>
+        <a href="#avulsos">Serviços</a>
+        <a href="#mobile">Mobile</a>
+        <a href="#feedbacks">Feedbacks</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+
+      <button class="btn btn-primary nav-cta" data-open-contact>AGENDAR</button>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-light hero-light-1"></div>
+      <div class="hero-light hero-light-2"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">OTIMIZAÇÃO PROFISSIONAL</span>
+          <h1>SEU SETUP.<br><em>NO MÁXIMO.</em></h1>
+          <p>
+            PC, notebook, Android e iOS com atendimento direcionado para
+            desempenho, estabilidade, responsividade e gameplay.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#pc" class="btn btn-primary">VER PLANOS</a>
+            <button class="btn btn-outline" data-open-contact>FALAR COM A EQUIPE</button>
+          </div>
+
+          <div class="payline">
+            <span>✓ PIX</span>
+            <span>✓ CARTÃO DE CRÉDITO</span>
+            <span>✓ ATENDIMENTO REMOTO</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="performance-card">
+            <div class="perf-top">
+              <span>USANTOOSFPS // SYSTEM</span>
+              <b>ONLINE</b>
+            </div>
+
+            <div class="perf-main">
+              <small>PERFIL</small>
+              <strong>COMPETITIVO</strong>
+              <span class="scanline"></span>
+            </div>
+
+            <div class="perf-grid">
+              <div><span>FPS</span><b>FOCO</b></div>
+              <div><span>INPUT</span><b>LOW</b></div>
+              <div><span>STABILITY</span><b>ON</b></div>
+              <div><span>SUPPORT</span><b>READY</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container quick-links reveal">
+        <a href="#pc"><b>PC</b><span>4 planos principais</span></a>
+        <a href="#avulsos"><b>SERVIÇOS AVULSOS</b><span>Formatação, sensi e BIOS</span></a>
+        <a href="#mobile"><b>MOBILE</b><span>Android e iOS</span></a>
+      </div>
+    </section>
+
+    <section class="section" id="pc">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="eyebrow">PLANOS PARA PC</span>
+          <h2>Escolha o seu nível de performance</h2>
+          <p>Os nomes e valores abaixo seguem a sua tabela atual.</p>
+        </div>
+
+        <div class="plan-grid" id="pcPlans"></div>
+
+        <div class="payment-strip reveal">
+          <span>◈</span>
+          <strong>PIX E CARTÃO DE CRÉDITO</strong>
+          <small>Consulte condições no atendimento.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="avulsos">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="eyebrow">TABELA GERAL</span>
+          <h2>Serviços avulsos</h2>
+          <p>Para quem precisa resolver uma parte específica do setup.</p>
+        </div>
+
+        <div class="extra-list" id="extraServices"></div>
+      </div>
+    </section>
+
+    <section class="section" id="mobile">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="eyebrow">ANDROID + IOS</span>
+          <h2>Otimização mobile</h2>
+          <p>Escolha a plataforma e o nível de atendimento.</p>
+        </div>
+
+        <div class="mobile-grid">
+          <div class="mobile-panel reveal">
+            <div class="mobile-head">
+              <span class="mobile-icon">A</span>
+              <div><small>ATENDIMENTO</small><h3>ANDROID</h3></div>
+            </div>
+            <div id="androidPlans"></div>
+          </div>
+
+          <div class="mobile-panel reveal">
+            <div class="mobile-head">
+              <span class="mobile-icon">i</span>
+              <div><small>ATENDIMENTO</small><h3>IOS</h3></div>
+            </div>
+            <div id="iosPlans"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="feedbacks">
+      <div class="container">
+        <div class="feedback-teaser reveal">
+          <div class="feedback-teaser-copy">
+            <span class="eyebrow">PROVA SOCIAL</span>
+            <h2>Feedbacks reais. Sem poluir a sua tela.</h2>
+            <p>
+              Aqui no site mostramos apenas uma seleção dos relatos que recebemos
+              depois dos serviços. Clique para abrir a galeria organizada com
+              Instagram, Discord e WhatsApp.
+            </p>
+
+            <div class="feedback-count">
+              <strong>+3.000</strong>
+              <span>feedbacks reunidos pela USANTOOSFPS</span>
+            </div>
+
+            <div class="feedback-teaser-actions">
+              <button class="btn btn-primary" type="button" data-open-feedback-gallery>
+                VER FEEDBACKS SELECIONADOS
+              </button>
+
+              <a class="btn btn-outline" href="https://discord.com/invite/e9F3AsGDqW" target="_blank" rel="noopener">
+                VER TODOS NO DISCORD
+              </a>
+            </div>
+          </div>
+
+          <aside class="feedback-teaser-proof">
+            <span class="proof-kicker">ACERVO COMPLETO</span>
+            <h3>Quer ver tudo?</h3>
+            <p>
+              Temos mais de <strong>3 mil feedbacks</strong>. No nosso Discord,
+              entre no servidor e acesse a aba <strong>Feedbacks</strong>.
+              Lá reunimos prints, vídeos e áudios que clientes enviaram após o serviço.
+            </p>
+            <p class="proof-instagram">
+              E para ver Stories, jogadores pro e streamers, confira também os
+              destaques do Instagram <strong>@usantoosfps</strong>.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="processo">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="eyebrow">SEM COMPLICAÇÃO</span>
+          <h2>Como funciona</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step reveal"><b>01</b><h3>Escolha</h3><p>Selecione o plano ou serviço.</p></article>
+          <article class="step reveal"><b>02</b><h3>Contato</h3><p>WhatsApp ou Discord.</p></article>
+          <article class="step reveal"><b>03</b><h3>Agende</h3><p>Combine o melhor horário.</p></article>
+          <article class="step reveal"><b>04</b><h3>Otimize</h3><p>Atendimento e testes finais.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="faq">
+      <div class="container faq-layout">
+        <div class="section-title reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Dúvidas rápidas</h2>
+        </div>
+        <div class="faq-list" id="faqList"></div>
+      </div>
+    </section>
+
+    <section class="section final-section">
+      <div class="container final-box reveal">
+        <div>
+          <span class="eyebrow">PRONTO?</span>
+          <h2>Deixe seu setup alinhado.</h2>
+          <p>Escolha WhatsApp ou Discord e fale com a equipe.</p>
+        </div>
+        <button class="btn btn-primary" data-open-contact>QUERO AGENDAR</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="brand"><span class="brand-icon">UF</span><span>USANTOOSFPS</span></div>
+      <div class="footer-links">
+        <a href="https://instagram.com/usantoosfps" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://tiktok.com/@usantoosfps" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://youtube.com/@usantoosfps" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://discord.com/invite/e9F3AsGDqW" target="_blank" rel="noopener">Discord</a>
+        <a href="https://wa.me/5511951422087" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">© <span id="year"></span> USANTOOSFPS. Protótipo.</div>
+  </footer>
+
+  <button class="dont-click" id="dontClick" aria-label="Não clique aqui">
+    <span>🔥</span>
+    <b>NÃO CLIQUE AQUI</b>
+  </button>
+
+  <div class="contact-modal" id="contactModal" aria-hidden="true">
+    <div class="contact-backdrop" data-close-contact></div>
+
+    <div class="contact-card contact-card-wide">
+      <button class="close-x" data-close-contact aria-label="Fechar">×</button>
+
+      <!-- ETAPA 1: CANAL -->
+      <div class="contact-view active" id="contactChoiceView">
+        <span class="eyebrow">ATENDIMENTO</span>
+        <h2>Como você quer falar com a gente?</h2>
+        <p id="selectedService">Escolha uma opção.</p>
+
+        <div class="contact-options">
+          <button id="whatsappChoice" class="channel whatsapp" type="button">
+            <span class="channel-icon">W</span>
+            <div>
+              <b>WHATSAPP</b>
+              <small>Preencha seu setup e leve tudo pronto</small>
+            </div>
+            <i>→</i>
+          </button>
+
+          <button id="discordChoice" class="channel discord" type="button">
+            <span class="channel-icon">D</span>
+            <div>
+              <b>DISCORD</b>
+              <small>Veja o passo a passo antes de entrar</small>
+            </div>
+            <i>→</i>
+          </button>
+        </div>
+      </div>
+
+      <!-- ETAPA 2A: WHATSAPP -->
+      <div class="contact-view" id="whatsappView">
+        <button class="view-back" type="button" data-contact-back>← VOLTAR</button>
+        <span class="eyebrow">WHATSAPP</span>
+        <h2>Conte qual é o seu setup</h2>
+        <p>
+          Quanto mais informação você souber, mais organizado o atendimento já começa.
+        </p>
+
+        <form class="setup-form" id="setupForm">
+          <div class="form-grid">
+            <label>
+              PROCESSADOR
+              <input name="cpu" placeholder="Ex.: Ryzen 7 9800X3D">
+            </label>
+
+            <label>
+              PLACA DE VÍDEO
+              <input name="gpu" placeholder="Ex.: RTX 4060 Ti">
+            </label>
+
+            <label>
+              PLACA-MÃE
+              <input name="motherboard" placeholder="Ex.: ASUS TUF B650M-PLUS">
+            </label>
+
+            <label>
+              MEMÓRIA RAM
+              <input name="ram" placeholder="Ex.: 32 GB DDR5 6000 MHz">
+            </label>
+
+            <label>
+              JOGO PRINCIPAL
+              <input name="game" placeholder="Ex.: Free Fire / Valorant">
+            </label>
+
+            <label>
+              PRINCIPAL PROBLEMA / OBJETIVO
+              <input name="problem" placeholder="Ex.: queda de FPS, stutter, input lag">
+            </label>
+          </div>
+
+          <label class="dont-know-check">
+            <input type="checkbox" id="dontKnowSetup">
+            <span>
+              <b>NÃO SEI RESPONDER MINHA CONFIGURAÇÃO</b>
+              <small>Sem problema. A equipe identifica seu hardware durante o atendimento.</small>
+            </span>
+          </label>
+
+          <div class="message-preview">
+            <small>MENSAGEM QUE SERÁ LEVADA PARA O WHATSAPP</small>
+            <pre id="setupMessagePreview"></pre>
+          </div>
+
+          <button class="btn btn-primary full-width" id="sendWhatsapp" type="submit">
+            ABRIR WHATSAPP COM MINHA CONFIGURAÇÃO
+          </button>
+
+          <small class="whatsapp-helper" id="whatsappHelper">
+            O WhatsApp abrirá com sua configuração preenchida automaticamente.
+          </small>
+        </form>
+      </div>
+
+      <!-- ETAPA 2B: DISCORD -->
+      <div class="contact-view" id="discordView">
+        <button class="view-back" type="button" data-contact-back>← VOLTAR</button>
+        <span class="eyebrow">DISCORD</span>
+        <h2 id="discordGuideTitle">Como abrir seu atendimento</h2>
+        <p id="discordGuideNote"></p>
+
+        <div class="discord-guide" id="discordGuideSteps"></div>
+
+        <a id="discordFinalBtn" class="btn btn-discord full-width" target="_blank" rel="noopener">
+          ENTRAR NO DISCORD E ABRIR MEU TICKET
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="feedback-gallery-modal" id="feedbackGalleryModal" aria-hidden="true">
+    <div class="feedback-gallery-backdrop" data-close-feedback-gallery></div>
+
+    <div class="feedback-gallery-shell" role="dialog" aria-modal="true" aria-labelledby="feedbackGalleryTitle">
+      <div class="feedback-gallery-header">
+        <div>
+          <span class="eyebrow">FEEDBACKS REAIS</span>
+          <h2 id="feedbackGalleryTitle">Veja uma seleção dos nossos resultados</h2>
+          <p>
+            Esta galeria é apenas uma amostra. Temos mais de <strong>3.000 feedbacks</strong>
+            com prints, vídeos e áudios no Discord.
+          </p>
+        </div>
+
+        <button class="feedback-gallery-close" type="button" data-close-feedback-gallery aria-label="Fechar galeria">×</button>
+      </div>
+
+      <div class="feedback-gallery-discord">
+        <div>
+          <b>QUER VER O ACERVO COMPLETO?</b>
+          <span>
+            Entre no Discord e procure a aba <strong>Feedbacks</strong>.
+            É lá que ficam todos os relatos enviados depois dos atendimentos.
+          </span>
+        </div>
+        <a href="https://discord.com/invite/e9F3AsGDqW" target="_blank" rel="noopener">
+          ABRIR DISCORD →
+        </a>
+      </div>
+
+      <div class="feedback-gallery-content">
+        <section class="feedback-block">
+          <div class="feedback-subhead">
+            <div>
+              <small>DESTAQUES</small>
+              <h3>Jogadores, criadores & Stories</h3>
+            </div>
+            <span>Clique em qualquer card para ampliar</span>
+          </div>
+
+          <div class="featured-feedback-grid" id="featuredFeedbackGrid"></div>
+        </section>
+
+        <section class="feedback-block community-block">
+          <div class="feedback-subhead">
+            <div>
+              <small>COMUNIDADE</small>
+              <h3>Instagram, Discord & WhatsApp</h3>
+            </div>
+            <span>Uma seleção dos relatos mais fortes</span>
+          </div>
+
+          <div class="feedback-filter">
+            <button class="feedback-filter-btn active" data-feedback-filter="ALL">TODOS</button>
+            <button class="feedback-filter-btn" data-feedback-filter="INSTAGRAM">INSTAGRAM</button>
+            <button class="feedback-filter-btn" data-feedback-filter="DISCORD">DISCORD</button>
+            <button class="feedback-filter-btn" data-feedback-filter="WHATSAPP">WHATSAPP</button>
+          </div>
+
+          <div class="community-feedback-grid" id="communityFeedbackGrid"></div>
+        </section>
+
+        <div class="feedback-gallery-bottom">
+          <div>
+            <strong>Quer continuar vendo?</strong>
+            <span>
+              No Discord estão os +3.000 feedbacks, incluindo prints, vídeos e áudios.
+            </span>
+          </div>
+
+          <a class="btn btn-primary" href="https://discord.com/invite/e9F3AsGDqW" target="_blank" rel="noopener">
+            IR PARA A ABA FEEDBACKS
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feedback-modal" id="feedbackModal" aria-hidden="true">
+    <div class="feedback-modal-backdrop" data-close-feedback></div>
+
+    <div class="feedback-modal-card">
+      <button class="close-x" data-close-feedback aria-label="Fechar">×</button>
+      <span class="feedback-modal-source" id="feedbackModalSource">FEEDBACK</span>
+
+      <div class="feedback-modal-profile" id="feedbackModalProfile"></div>
+
+      <div class="feedback-screenshot" id="feedbackScreenshot">
+        <span>PRINT / DEPOIMENTO</span>
+        <p id="feedbackModalText"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="blue-alert" id="blueAlert" aria-hidden="true">
+    <div class="blue-alert-inner">
+      <div class="bsod-face">:(</div>
+      <span class="simulation-tag">SIMULAÇÃO // ALERTA DE CONFIGURAÇÃO</span>
+      <h2>SEU PC NÃO PRECISA CHEGAR NESSE PONTO.</h2>
+      <p>
+        Configurações inadequadas podem causar instabilidade, travamentos,
+        temperaturas elevadas e perda de desempenho. Ajustes agressivos de
+        tensão, clock ou ventilação feitos sem teste também podem aumentar o
+        estresse sobre o hardware.
+      </p>
+      <p class="blue-strong">
+        Melhor opção: deixar o sistema alinhado, testado e configurado de acordo com o seu setup.
+      </p>
+
+      <div class="blue-actions">
+        <button class="blue-primary" id="blueSchedule">ALINHAR MEU PC AGORA</button>
+        <button class="blue-secondary" id="blueRisk">QUERO SEGUIR POR CONTA PRÓPRIA</button>
+      </div>
+
+      <div class="fake-code">USFPS_CONFIG_WARNING // 0x0000FPS</div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
